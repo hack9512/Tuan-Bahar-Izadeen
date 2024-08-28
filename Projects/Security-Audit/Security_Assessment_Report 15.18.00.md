@@ -1,61 +1,77 @@
 
 # Security Assessment Report
 
-## Scope and Objectives
-The scope of this security audit includes the entire security program at Botium Toys, encompassing all assets, internal processes, and procedures. The objective is to assess existing assets, identify risks, and evaluate controls and compliance with best practices.
+## 1. Overview
 
-## Summary of Findings
+This security assessment was conducted for Botium Toys, a small U.S. business that develops and sells toys. As the company's online presence has expanded, the IT department is under increased pressure to maintain security and compliance. This report outlines the findings from the internal security audit conducted, focusing on the controls and compliance requirements.
 
-### Controls Assessment
+## 2. Scope and Goals
 
-| Yes | No | Control | Explanation |
-|-----|----|---------|-------------|
-|     | X  | Least Privilege | Currently, all employees have access to customer data; privileges need to be limited to reduce the risk of a breach. |
-|     | X  | Disaster recovery plans | There are no disaster recovery plans in place. These need to be implemented to ensure business continuity. |
-|  X  |    | Password policies | Employee password requirements are minimal, which could allow a threat actor to more easily access secure data/other assets via employee work equipment/the internal network. |
-|     | X  | Separation of duties | Needs to be implemented to reduce the possibility of fraud/access to critical data, since the company CEO currently runs day-to-day operations and manages the payroll. |
-|  X  |    | Firewall | The existing firewall blocks traffic based on an appropriately defined set of security rules. |
-|     | X  | Intrusion detection system (IDS) | The IT department needs an IDS in place to help identify possible intrusions by threat actors. |
-|     | X  | Backups | The IT department needs to have backups of critical data, in the case of a breach, to ensure business continuity. |
-|  X  |    | Antivirus software | Antivirus software is installed and monitored regularly by the IT department. |
-|  X  |    | Manual monitoring, maintenance, and intervention for legacy systems | The list of assets notes the use of legacy systems. The risk assessment indicates that these systems are monitored and maintained, but there is not a regular schedule in place for this task, and procedures/policies related to intervention are unclear, which could place these systems at risk of a breach. |
-|     | X  | Encryption | Encryption is not currently used; implementing it would provide greater confidentiality of sensitive information. |
-|     | X  | Password management system | There is no password management system currently in place; implementing this control would improve IT department/other employee productivity in the case of password issues. |
-|  X  |    | Locks (offices, storefront, warehouse) | The store’s physical location, which includes the company’s main offices, storefront, and warehouse of products, has sufficient locks. |
-|  X  |    | Closed-circuit television (CCTV) surveillance | CCTV is installed/functioning at the store’s physical location. |
-|  X  |    | Fire detection/prevention (fire alarm, sprinkler system, etc.) | Botium Toys’ physical location has a functioning fire detection and prevention system. |
+- **Scope:** The audit covered the entire security program at Botium Toys, including all assets, internal processes, and procedures.
+- **Goals:** The primary goal was to assess existing assets, complete the controls and compliance checklist, and identify areas for improvement in Botium Toys' security posture.
 
-### Compliance Checklist
+## 3. Findings
 
-#### Payment Card Industry Data Security Standard (PCI DSS)
+### 3.1 Controls Assessment
 
-| Yes | No | Best Practice | Explanation |
-|-----|----|--------------|-------------|
-|     | X  | Only authorized users have access to customers’ credit card information. | Currently, all employees have access to the company’s internal data. |
-|     | X  | Credit card information is accepted, processed, transmitted, and stored internally, in a secure environment. | Credit card information is not encrypted and all employees currently have access to internal data, including customers’ credit card information. |
-|     | X  | Implement data encryption procedures to better secure credit card transaction touchpoints and data. | The company does not currently use encryption to better ensure the confidentiality of customers’ financial information. |
-|  X  |    | Adopt secure password management policies. | Password policies are nominal and no password management system is currently in place. |
+| **Control** | **Status** | **Explanation** |
+|-------------|------------|-----------------|
+| Least Privilege | Not Implemented | All employees currently have access to customer data; privileges need to be limited. |
+| Disaster Recovery Plans | Not Implemented | No disaster recovery plans are in place. |
+| Password Policies | Not Implemented | Existing password policies are minimal and inadequate. |
+| Separation of Duties | Not Implemented | Not implemented, increasing the risk of fraud. |
+| Firewall | Implemented | The firewall blocks traffic based on security rules. |
+| Intrusion Detection System (IDS) | Not Implemented | No IDS is in place. |
+| Backups | Not Implemented | No backups of critical data exist. |
+| Antivirus Software | Implemented | Antivirus software is installed and monitored regularly. |
+| Manual Monitoring for Legacy Systems | Not Implemented | Legacy systems are monitored but lack a regular schedule. |
+| Encryption | Not Implemented | Encryption is not used to secure sensitive data. |
+| Password Management System | Not Implemented | No centralized password management system is in place. |
+| Physical Security (Locks, CCTV) | Implemented | Locks and CCTV are in place and functioning. |
+| Fire Detection/Prevention | Implemented | Fire detection and prevention systems are operational. |
 
-#### General Data Protection Regulation (GDPR)
+### 3.2 Compliance Assessment
 
-| Yes | No | Best Practice | Explanation |
-|-----|----|--------------|-------------|
-|     | X  | E.U. customers’ data is kept private/secured. | The company does not currently use encryption to better ensure the confidentiality of customers’ financial information. |
-|  X  |    | There is a plan in place to notify E.U. customers within 72 hours if their data is compromised/there is a breach. | There is a plan to notify E.U. customers within 72 hours of a data breach. |
-|     | X  | Ensure data is properly classified and inventoried. | Current assets have been inventoried/listed, but not classified. |
-|  X  |    | Enforce privacy policies, procedures, and processes to properly document and maintain data. | Privacy policies, procedures, and processes have been developed and enforced among IT team members and other employees, as needed. |
+**Payment Card Industry Data Security Standard (PCI DSS)**
 
-#### System and Organizations Controls (SOC type 1, SOC type 2)
+| **Best Practice** | **Status** | **Explanation** |
+|-------------------|------------|-----------------|
+| Authorized access to credit card data | Not Adhered | All employees can access credit card data. |
+| Secure environment for credit card data | Not Adhered | Credit card information is not encrypted. |
+| Data encryption | Not Adhered | Encryption procedures are not implemented. |
+| Secure password management | Not Adhered | Password policies are inadequate, and no management system exists. |
 
-| Yes | No | Best Practice | Explanation |
-|-----|----|--------------|-------------|
-|     | X  | User access policies are established. | Controls of Least Privilege and separation of duties are not currently in place; all employees have access to internally stored data. |
-|     | X  | Sensitive data (PII/SPII) is confidential/private. | Encryption is not currently used to better ensure the confidentiality of PII/SPII. |
-|  X  |    | Data integrity ensures the data is consistent, complete, accurate, and has been validated. | Data integrity is in place. |
-|     | X  | Data is available to individuals authorized to access it. | While data is available to all employees, authorization needs to be limited to only the individuals who need access to it to do their jobs. |
+**General Data Protection Regulation (GDPR)**
 
-### Recommendations
+| **Best Practice** | **Status** | **Explanation** |
+|-------------------|------------|-----------------|
+| Data privacy/security for E.U. customers | Not Adhered | Encryption is not used for sensitive information. |
+| Breach notification plan | Adhered | A plan is in place to notify E.U. customers within 72 hours. |
+| Data classification/inventory | Not Adhered | Data has been inventoried but not classified. |
+| Enforced privacy policies | Adhered | Privacy policies and procedures are enforced. |
 
-Multiple controls need to be implemented to improve Botium Toys’ security posture and better ensure the confidentiality of sensitive information, including: Least Privilege, disaster recovery plans, password policies, separation of duties, an IDS, ongoing legacy system management, encryption, and a password management system.
+**System and Organization Controls (SOC type 1, SOC type 2)**
 
-To address gaps in compliance, Botium Toys needs to implement controls such as Least Privilege, separation of duties, and encryption. The company also needs to properly classify assets, to identify additional controls that may need to be implemented to improve their security posture and better protect sensitive information.
+| **Best Practice** | **Status** | **Explanation** |
+|-------------------|------------|-----------------|
+| User access policies | Not Adhered | Controls for Least Privilege and Separation of Duties are not in place. |
+| Confidentiality of sensitive data | Not Adhered | Sensitive data is not encrypted. |
+| Data integrity | Adhered | Data integrity measures are in place. |
+| Data availability | Not Adhered | Data access is not restricted to authorized personnel. |
+
+## 4. Recommendations
+
+To improve the security posture and compliance of Botium Toys, the following actions are recommended:
+
+- **Implement Least Privilege:** Limit data access to only those employees who need it to perform their duties.
+- **Develop Disaster Recovery Plans:** Establish and regularly test disaster recovery plans to ensure business continuity.
+- **Strengthen Password Policies:** Update password policies to meet current security standards and enforce them through a centralized management system.
+- **Establish Separation of Duties:** Implement separation of duties to reduce the risk of fraud and unauthorized access.
+- **Install Intrusion Detection System (IDS):** Deploy an IDS to detect and respond to potential security incidents.
+- **Enable Data Encryption:** Encrypt sensitive data, especially credit card information, to protect against data breaches.
+- **Schedule Regular Monitoring for Legacy Systems:** Create and adhere to a regular monitoring schedule for legacy systems.
+- **Classify and Inventory Data:** Properly classify all data to identify and protect sensitive information more effectively.
+
+## 5. Conclusion
+
+This security assessment has identified several critical areas where Botium Toys needs to improve its security controls and compliance measures. By implementing the recommended actions, the company can significantly enhance its security posture and reduce the risk of non-compliance with relevant regulations.
