@@ -1,31 +1,20 @@
 # SECURITY AUDIT
 
 ## Objective
-[Brief Objective - Remove this afterwards]
 
-The Detection Lab project aimed to establish a controlled environment for simulating and detecting cyber attacks. The primary focus was to ingest and analyze logs within a Security Information and Event Management (SIEM) system, generating test telemetry to mimic real-world attack scenarios. This hands-on experience was designed to deepen understanding of network security, attack patterns, and defensive strategies.
+The objective of this security audit was to assess the security posture of Botium Toys. The audit focused on reviewing the implementation of security controls, identifying areas of non-compliance with industry standards and regulations, and providing recommendations to enhance the overall security framework. The ultimate goal was to ensure that Botium Toys' IT infrastructure is robust against potential cyber threats and compliant with relevant regulations such as PCI DSS, GDPR, and SOC 2.
 
-### Skills Learned
-[Bullet Points - Remove this afterwards]
+## Skills Learned
 
-- Advanced understanding of SIEM concepts and practical application.
-- Proficiency in analyzing and interpreting network logs.
-- Ability to generate and recognize attack signatures and patterns.
-- Enhanced knowledge of network protocols and security vulnerabilities.
-- Development of critical thinking and problem-solving skills in cybersecurity.
+- Comprehensive understanding of security frameworks and regulatory requirements (PCI DSS, GDPR, SOC 2).
+- Proficiency in evaluating and implementing security controls across various domains (technical, administrative, and physical).
+- Ability to conduct risk assessments and identify potential vulnerabilities in IT infrastructure.
+- Enhanced knowledge of data protection measures, including encryption and access controls.
+- Development of strategic recommendations to improve organizational security posture.
 
-### Tools Used
-[Bullet Points - Remove this afterwards]
+## Tools Used
 
-- Security Information and Event Management (SIEM) system for log ingestion and analysis.
-- Network analysis tools (such as Wireshark) for capturing and examining network traffic.
-- Telemetry generation tools to create realistic network traffic and attack scenarios.
-
-## Steps
-drag & drop screenshots here or use imgur and reference them using imgsrc
-
-Every screenshot should have some text explaining what the screenshot is about.
-
-Example below.
-
-*Ref 1: Network Diagram*
+- **Security Information and Event Management (SIEM) System**: Used for log ingestion, analysis, and identifying potential security incidents.
+- **Network Analysis Tools**: Tools like Wireshark were utilized for capturing and analyzing network traffic to detect anomalies.
+- **Compliance Checklists**: Used to ensure adherence to industry standards such as PCI DSS, GDPR, and SOC 2.
+- **Risk Assessment Frameworks**: Employed to identify and evaluate potential security risks to Botium Toys' assets.
