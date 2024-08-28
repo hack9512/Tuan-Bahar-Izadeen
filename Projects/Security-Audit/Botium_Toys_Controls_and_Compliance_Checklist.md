@@ -5,16 +5,16 @@
 
 | Control                                              | Yes | No  |
 |------------------------------------------------------|-----|-----|
-| Least Privilege                                      | No  | ●   |
+| Least Privilege                                      |     | ●   |
 | Disaster recovery plans                              |     | ●   |
-| Password policies                                    | ●   |     |
-| Separation of duties                                 | No  | ●   |
+| Password policies                                    |     | ●   |
+| Separation of duties                                 |     | ●   |
 | Firewall                                             | ●   |     |
 | Intrusion detection system (IDS)                     |     | ●   |
-| Backups                                              |     | ●   |
+| Backups                                              | ●   |     |
 | Antivirus software                                   | ●   |     |
-| Manual monitoring, maintenance, and intervention for legacy systems | ●   |     |
-| Encryption                                           | No  | ●   |
+| Manual monitoring, maintenance, and intervention for legacy systems |     | ●   |
+| Encryption                                           |     | ●   |
 | Password management system                           |     | ●   |
 | Locks (offices, storefront, warehouse)               | ●   |     |
 | Closed-circuit television (CCTV) surveillance        | ●   |     |
@@ -26,10 +26,10 @@
 
 | Best Practice                                       | Yes | No  |
 |-----------------------------------------------------|-----|-----|
-| Only authorized users have access to customers’ credit card information. | No  | ●   |
+| Only authorized users have access to customers’ credit card information. |     | ●   |
 | Credit card information is stored, accepted, processed, and transmitted internally, in a secure environment. |     | ●   |
 | Implement data encryption procedures to better secure credit card transaction touchpoints and data. |     | ●   |
-| Adopt secure password management policies.          | ●   |     |
+| Adopt secure password management policies.          |     | ●   |
 
 ### General Data Protection Regulation (GDPR)
 
@@ -44,7 +44,7 @@
 
 | Best Practice                                       | Yes | No  |
 |-----------------------------------------------------|-----|-----|
-| User access policies are established.               | ●   |     |
+| User access policies are established.               |     |  ●  |
 | Sensitive data (PII/SPII) is confidential/private.  | ●   |     |
 | Data integrity ensures the data is consistent, complete, accurate, and has been validated. | ●   |     |
 | Data is available to individuals authorized to access it. | ●   |     |
@@ -54,21 +54,24 @@
 Based on the above assessment, here are the key recommendations to address the identified gaps:
 
 1. **Implement Least Privilege and Access Control Policies:**
-   - Restrict access to sensitive data to only those employees who need it for their job functions. This will reduce the risk of unauthorized access and potential data breaches.
+   - This will reduce the risk of insider threats and ensure that employees have access only to the data necessary for their roles.
 
 2. **Develop and Implement Disaster Recovery Plans:**
-   - Establish a disaster recovery plan and ensure that regular backups of critical data are performed and tested to maintain business continuity.
+   - Creating and regularly testing disaster recovery plans will help ensure business continuity in the event of a major incident.
+     
+3. **Strengthen Password Policies:**
+   - Update the password policy to meet current complexity standards and enforce it through a centralized password management system.
 
-3. **Deploy an Intrusion Detection System (IDS):**
-   - Implement an IDS to monitor network traffic for suspicious activities, allowing early detection and response to potential threats.
-
-4. **Implement Data Encryption:**
+5. **Implement Data Encryption:**
    - Encrypt sensitive data, especially credit card information, to comply with PCI DSS and protect against data breaches.
 
-5. **Establish a Password Management System:**
+6. **Establish a Password Management System:**
    - Implement a centralized password management system to enforce secure password practices and improve overall security.
 
-6. **Enhance Data Classification and Inventory for GDPR Compliance:**
+7. **Enhance Data Classification and Inventory for GDPR Compliance:**
    - Properly classify and inventory all data, particularly E.U. customers’ data, to ensure full compliance with GDPR standards.
+     
+8. **Install an Intrusion Detection System (IDS):**
+   - This will provide the ability to detect and respond to potential security incidents more effectively
 
 By addressing these recommendations, Botium Toys can significantly enhance its security posture and ensure compliance with relevant standards and regulations.
