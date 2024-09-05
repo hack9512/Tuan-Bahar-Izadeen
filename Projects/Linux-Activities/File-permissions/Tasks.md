@@ -3,6 +3,7 @@
 <h2>Project description</h2>
 
 The research team at my organization needs to update the file permissions for certain files and directories within the projects directory. The permissions do not currently reflect the level of authorization that should be given. Checking and updating these permissions will help keep their system secure. To complete this task, I performed the following tasks:
+
 # Task 1: Check File and Directory Details
 
 To ensure proper permissions and security.
