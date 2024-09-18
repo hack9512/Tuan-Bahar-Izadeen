@@ -11,13 +11,13 @@ The attackers gained access to the network through **phishing emails**, which co
 
 ---
 
-**Date**: January 16th, 2024  
+**Date**: September 16th, 2024  
 **Entry**: #1
 
 ### Incident Details:
 - **Who caused the incident?**: Organized group of hackers.
 - **What happened?**: Ransomware attack. Employees were unable to access medical records, and business operations were shut down.
-- **When did the incident occur?**: Tuesday Morning, January 16th, 2024.
+- **When did the incident occur?**: Monday Morning, September 16th, 2024.
 - **Where did the incident happen?**: A healthcare company.
 - **Why did the incident happen?**: The attackers gained access via phishing emails that installed ransomware when downloaded.
 
@@ -36,7 +36,7 @@ The incident was first detected on January 20, 2024, when an employee received a
 
 ---
 
-**Date**: January 22nd, 2024  
+**Date**: September 18, 2024  
 **Entry**: #1
 
 ### Incident Details:
@@ -52,7 +52,7 @@ The incident was first detected on January 20, 2024, when an employee received a
 
 ---
 
-**Date**: January 23rd, 2024  
+**Date**: September 23rd, 2024  
 **Entry**: #2
 
 ### Incident Details:
@@ -78,7 +78,7 @@ Using the file's **SHA256 hash**, you investigate the incident using VirusTotal 
 
 ---
 
-**Date**: January 17th, 2024  
+**Date**: Semptember 23th, 2024  
 **Entry**: #1
 
 ### Incident Details:
@@ -94,7 +94,7 @@ Using the file's **SHA256 hash**, you investigate the incident using VirusTotal 
 
 ---
 
-**Date**: January 18th, 2024  
+**Date**: September 24th, 2024  
 **Entry**: #2
 
 ### Incident Details:
