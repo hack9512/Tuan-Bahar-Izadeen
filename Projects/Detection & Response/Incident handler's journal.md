@@ -11,7 +11,7 @@ The attackers gained access to the network through **phishing emails**, which co
 
 ---
 
-**Date**: September 16th, 2024  
+**Date**: July 23th, 2024  
 **Entry**: #1
 
 ### Incident Details:
@@ -30,19 +30,19 @@ The attackers gained access to the network through **phishing emails**, which co
 ## Scenario 2
 
 ### Overview
-On January 22, 2024, at 7:20 p.m. PT, an individual gained unauthorized access to **personal identifiable information (PII)** and **financial information** of approximately 50,000 customers. The estimated financial impact was $100,000 in direct costs and potential loss of revenue.
+On January 22th, 2024, at 7:20 p.m. PT, an individual gained unauthorized access to **personal identifiable information (PII)** and **financial information** of approximately 50,000 customers. The estimated financial impact was $100,000 in direct costs and potential loss of revenue.
 
-The incident was first detected on January 20, 2024, when an employee received an email claiming the sender had stolen customer data. The sender demanded $25,000 in cryptocurrency, but the employee ignored it. On January 22, the employee received another email, this time with a sample of the stolen data and an increased demand of $50,000. The security team was then notified.
+The incident was first detected on September 20, 2024, when an employee received an email claiming the sender had stolen customer data. The sender demanded $25,000 in cryptocurrency, but the employee ignored it. On September 22, the employee received another email, this time with a sample of the stolen data and an increased demand of $50,000. The security team was then notified.
 
 ---
 
-**Date**: September 18, 2024  
+**Date**: July 25, 2024  
 **Entry**: #1
 
 ### Incident Details:
 - **Who caused the incident?**: Cybercriminal (malicious actor).
 - **What happened?**: An external email threatened to release stolen customer data unless a cryptocurrency payment was made.
-- **When did the incident occur?**: January 22, 2024, 7:20 p.m. PT.
+- **When did the incident occur?**: September 22, 2024, 7:20 p.m. PT.
 - **Where did the incident happen?**: At the organization.
 - **Why did the incident happen?**: The attackers gained unauthorized access to customer information and attempted blackmail.
 
@@ -58,7 +58,7 @@ The incident was first detected on January 20, 2024, when an employee received a
 ### Incident Details:
 - **Who caused the incident?**: Cybercriminal (malicious actor).
 - **What happened?**: Attackers used a forced browsing attack by modifying the order number in the URL string to gain access to customer transaction data.
-- **When did the incident occur?**: January 23, 2024.
+- **When did the incident occur?**: September 23, 2024.
 - **Where did the incident happen?**: At the organization.
 - **Why did the incident happen?**: The attackers exploited a vulnerability in the e-commerce web application through forced browsing.
 
@@ -84,7 +84,7 @@ Using the file's **SHA256 hash**, you investigate the incident using VirusTotal 
 ### Incident Details:
 - **Who caused the incident?**: Cybercriminal (malicious actor).
 - **What happened?**: The employee opened a malicious file attached to an email, which led to malware execution.
-- **When did the incident occur?**: January 17th, 2024, 1:20 p.m.
+- **When did the incident occur?**: September 17th, 2024, 1:20 p.m.
 - **Where did the incident happen?**: Financial Service Company.
 - **Why did the incident happen?**: The employee downloaded and executed the malicious file after receiving the email.
 
@@ -100,7 +100,7 @@ Using the file's **SHA256 hash**, you investigate the incident using VirusTotal 
 ### Incident Details:
 - **Who caused the incident?**: Cybercriminal (malicious actor).
 - **What happened?**: The phishing attempt was escalated. The employee opened a malicious email and attachments.
-- **When did the incident occur?**: January 17th, 2024, 1:20 p.m.
+- **When did the incident occur?**: September 17th, 2024, 1:20 p.m.
 - **Where did the incident happen?**: Financial Service Company.
 - **Why did the incident happen?**: The employee clicked a link from an unknown sender and opened a password-protected file.
 
