@@ -6,7 +6,7 @@ I’m a motivated security analyst seeking an entry-level cybersecurity position
 
 Recently, I completed the Google Cybersecurity Professional Certificate and Cyber security Specialist Federal exam preparatory course to pursue my passion for technology and Cybersecurity. The Google Cybersecurity Professional Certificate and cyber security specialist certtifications have prepared me for industry-ready jobs. My ultimate goal is to become a Security Analyst. This role suits me because I have strong analytical abilities, persistence, eagerness to learn, a can-do attitude, problem-solving skills, and communication skills to address problems and emerging threats. 
 
-As of 2024, I am preparing to take the `Linux Foundation Certified Associate (LFCA)`, `CompTIA A+` and `CompTIA Security+` certifications.
+As of 2024, I am preparing to take the `Linux Foundation Certified Associate (LFCA)`, `CompTIA A+` and `CompTIA Security+ certifications.
 
 ## Portfolio
 > Please visit this <a href="https://www.coursera.org/accomplishments?utm_medium=email&utm_source=other&utm_campaign=courseCompletion~7LHOTGUJEe21jBLFGcIQ1w">[link]<a/> for further Cousera certification information.
