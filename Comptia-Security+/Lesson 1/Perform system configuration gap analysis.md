@@ -64,7 +64,105 @@ Scroll to the bottom of the list and locate the **LockoutBadCount** and **Minimu
 > - Notice the baseline value from the security templates for the policy settings of MinimumPasswordLength is 14
 
 Close the Policy Viewer window
+
+Now lets **Click Button** **Compare to Effective State**
+
+When using a tool like Policy Viewer, the “Compare the Effective State” feature enables you to:
+> - Compare Actual Policy vs. Baseline: You can compare the currently applied (effective) policy settings on a system with a predefined security baseline (e.g., Windows security baseline or CIS benchmark). This helps in identifying misconfigurations or deviations from best practices.
+> - Detect Policy Gaps: Any differences between the current effective policy and the desired configuration will be highlighted. For example, you may find that a specific security setting is weaker than recommended (e.g., password length is shorter than recommended).
+> - Audit and Compliance: The comparison helps in auditing the system to ensure that security policies meet compliance standards and organizational policies.
+
+<p>Perform a Compare to Effective State of **MSFT-Win10-v1809-RS5-WS2019-FINAL** using Policy Analyzer by marking the **MSFT-Win10-v1809-RS5-WS2019-FINAL** checkbox, then selecting **Compare to Effective State**.</p>
+
+![Screen Recording 2024-10-05 at 20 01 08](https://github.com/user-attachments/assets/e1b03cd3-a0b9-4aa0-bf80-e9bb38a920df)
+
+This information appears to be a detailed explanation of the **Account Lockout Policy**, particularly focusing on the **Account Lockout Threshold** setting in Group Policy, which is a part of the **Security Settings** under **Account Policies**.
+
+### Breakdown:
+
+#### 1. **Policy Path:**
+The policy path points to where this specific setting can be found within the **Group Policy Editor**:
+- **Security Settings**: This is a section within Group Policy settings where various security configurations are managed.
+- **Account Policies**: This subsection deals with policies that affect user accounts, such as password and lockout settings.
+- **Account Lockout Policy**: This policy handles the rules for locking out accounts after multiple failed login attempts.
+- **Account Lockout Threshold**: The specific setting that determines how many failed login attempts will trigger an account lockout.
+
+#### 2. **Account Lockout Threshold:**
+This section explains what this setting does:
+
+- **Purpose**:  
+  The **Account Lockout Threshold** specifies the number of failed login attempts that will cause a user account to be locked out. If a user exceeds this number, the account is locked, either requiring intervention from an administrator or waiting for the lockout duration to expire before the account is unlocked.
+
+- **Value Range**:  
+  You can set a value between **0 and 999**. A value of **0** means that the account will **never be locked out** regardless of how many failed login attempts occur.
+
+- **Use Case**:  
+  This is important in environments where brute-force attacks could be attempted. The threshold helps in preventing attackers from continuously trying to guess a user's password.
+
+- **Special Cases**:  
+  Failed login attempts against workstations or member servers that have been locked (e.g., with `CTRL + ALT + DELETE` or password-protected screensavers) **still count** as failed logon attempts, and can contribute to locking out the account.
+
+- **Default Value**:  
+  The default value for this setting is **0**, meaning accounts will never be locked out by default unless an administrator changes the setting.
+
+#### 3. **Baseline(s):**
+- **Option**: **10**  
+  The security baseline suggests setting the account lockout threshold to **10** failed attempts before the account is locked out.
+- **GPO (Group Policy Object)**:  
+  The specific baseline or security recommendation is part of **MSFT Windows 10 1809 and Server 2019 - Domain Security**. This means the baseline is applicable to **Windows 10 Version 1809** and **Windows Server 2019** and reflects Microsoft’s security recommendations for domain environments.
+
+#### 4. **Effective State:**
+This section compares the actual settings applied on the machine (effective state) to the baseline:
+
+- **Option**: **10**  
+  This indicates that the **effective setting** on the system is set to 10 failed attempts before locking the account, which is in line with the baseline recommendation.
+- **GPO**: **PC10 - secedit**  
+  This indicates that the setting is being applied from a specific Group Policy Object named **PC10**, and the tool used to configure or audit this setting is likely **secedit** (a command-line tool used for security configuration).
+
+### Summary:
+- The **Account Lockout Threshold** is set to **10** failed login attempts before an account is locked out, which matches the recommended baseline for Windows 10 (Version 1809) and Windows Server 2019.
+- This policy ensures that after 10 incorrect password attempts, a user’s account is temporarily locked, enhancing security against brute-force attacks.
+- The configuration is enforced via a **GPO** on the domain, and this is validated by tools like **secedit**. The baseline being followed is from Microsoft's security recommendations for domain environments.
+
+
 <h3>Tools</h3>
 
 > - <p>Microsoft Policy Analyzer</p>
 > - <p>Powershell</p>
+> - <p>ChatGPT</p>
+
+<h3>Skills enriched</h3>
+During a **gap analysis**, you typically develop and enhance the following skills:
+
+### 1. **Analytical Thinking**:
+   - The ability to assess the current state versus the desired state.
+   - Identifying gaps between existing processes and the required outcomes.
+
+### 2. **Problem-Solving**:
+   - Determining the root causes of gaps and creating solutions to address them.
+   - Prioritizing issues based on their impact and feasibility of resolution.
+
+### 3. **Attention to Detail**:
+   - Carefully examining policies, processes, and configurations to find deviations from baselines.
+   - Ensuring no crucial settings or practices are overlooked.
+
+### 4. **Research and Benchmarking**:
+   - Familiarizing yourself with industry standards, frameworks, and baselines (e.g., CIS benchmarks, Microsoft security baselines).
+   - Comparing current policies and procedures with best practices.
+
+### 5. **Technical Knowledge**:
+   - Understanding system configurations, such as Group Policy settings, security policies, and system baselines (for example, in Windows environments).
+   - Gaining familiarity with tools used in gap analysis, like Policy Analyzer, Microsoft Compliance Toolkit, and PowerShell.
+
+### 6. **Documentation and Reporting**:
+   - Documenting the findings from the gap analysis in a clear, structured format.
+   - Reporting gaps to stakeholders and explaining the risks and impact.
+
+### 7. **Communication**:
+   - Explaining technical gaps to non-technical stakeholders and suggesting solutions in an understandable way.
+   - Coordinating with different teams (security, compliance, IT) to implement improvements.
+
+### 8. **Project Management**:
+   - Developing action plans to close identified gaps.
+   - Monitoring the progress and ensuring that remediation efforts are completed within set timelines.
+
