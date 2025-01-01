@@ -24,7 +24,7 @@ Determine the build for the Windows Server 2019 running in the PC. **Type here t
 > - Version Number = 1809
 > - OS Build Number = 17763.4377
 
-If you perform these operations against other systems, you will need to match the version and build numbers to the baseline template files.
+If you perform these operations against other systems, you will need to <b>match the version and build numbers to the baseline template files<strong>.
 
 Select **Type here to search** from the taskbar, type **powershell**, right-click **Windows PowerShell** from the results, then select **Run as administrator**.
 ![Screenshot 2024-10-05 at 12 31 43](https://github.com/user-attachments/assets/f4de7244-6923-4cb9-82e0-f063f4761158)
