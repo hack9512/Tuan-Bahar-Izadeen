@@ -68,6 +68,7 @@ Several tools that I used:
 * Python 
 
 ## Certifications
+* <a href="http://verify.comptia.org/">CompTIA Security+ Certification, SY0-701</a>
 * <a href="https://www.credential.net/b6ff4517-ca25-47b8-9663-64a22059040f#gs.fwxi46">Cyber Security Specialist Federal Exam preparatory Course</a>
 * <a href="https://www.credly.com/users/tuan-bahar-izadeen">Google Cyber Security Certitification</a>
 * <a href="https://www.coursera.org/account/accomplishments/records/GW80N7FGJ8CX">Connect and Protect: Networks and Network Security</a>
